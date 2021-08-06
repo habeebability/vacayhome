@@ -1,0 +1,64 @@
+.dinning__container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.dinning__container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dinning-main {
+  flex-basis: 75%;
+}
+
+.dinning-main p {
+  margin: 2.5em 0;
+}
+
+.dinning-main h1 {
+  margin-bottom: 0.5em;
+}
+
+.dinning-main img {
+  margin-top: 1em;
+}
+
+.dinning-main small span {
+  color: #ff4157;
+}
+
+.dinning-main form h2 {
+  margin-bottom: 0.5em;
+}
+
+.dinning-main form input {
+  padding: 0.5em;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.dinning-main form textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  height: auto;
+}
+
+.dinning-main form .submitBtn {
+  width: auto;
+}
+
+.dinning-aside {
+  flex-basis: 25%;
+}
+
+.dinning-aside h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.4em;
+}
+
+.dinning-aside li {
+  padding: 0.5em 0;
+}

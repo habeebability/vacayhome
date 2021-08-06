@@ -1,0 +1,44 @@
+.contact__container {
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+}
+
+.contact-us {
+  flex-basis: 45%;
+}
+.contact-us span:not(:first-child) {
+  display: block;
+  text-align: right;
+}
+
+.send-message {
+  flex-basis: 45%;
+}
+.send-message input {
+  padding: 0.7em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.send-message textarea {
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.send-message .submitBtn {
+  width: initial;
+}
+
+.contact-us span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-us i {
+  color: #fff;
+  background-color: tomato;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0.5em;
+}

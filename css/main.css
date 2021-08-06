@@ -91,11 +91,15 @@ a {
   padding: 0.5em 1em;
 }
 
-.navbar .nav-item a:hover {
-  padding: 0.5em 0.2em;
+.navbar .nav-item a {
+  color: black;
 }
 
 .navbar .nav-item a:hover {
+  color: white;
+}
+
+.navbar .nav-item:hover {
   color: #fff;
   background-color: #ff4157;
 }
@@ -368,6 +372,10 @@ input[type="email"] {
 
 #scroll-top.showBtn {
   display: none;
+}
+
+#scroll-top span {
+  display: block;
 }
 
 @media screen and (min-width: 767px) {
