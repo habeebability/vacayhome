@@ -1,7 +1,7 @@
 .gallery-hero {
   display: flex;
   justify-content: center;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .gallery {
@@ -73,4 +73,16 @@
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 6;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-hero {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-hero {
+    padding: 0 5rem;
+  }
 }

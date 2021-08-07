@@ -7,8 +7,8 @@
   
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="./js/script.js" defer></script>
 
-  <script src="js/script.js" defer></script>
   <title>VacayHome</title>
 </head>
 <body>
@@ -27,8 +27,8 @@
     </section>
 
     <!-- main header contains main page's nav bar -->
-    <section class="primary-header">
-      <nav class="navbar container">
+    <section class="primary-header container">
+      <nav class="navbar ">
         <a href="index.html"><h2 class="brand-name">Vacay<span>home</span></h2></a>
         <ul class="nav-links nav nav-tabs">
           <li role="presentation" class="nav-item active"><a href="index.html" aria-controls="home" role="tab" data-toggle="tab">HOME </a></li>
@@ -39,7 +39,15 @@
           <li role="presentation" class="nav-item"><a href="./pages/news.html" aria-controls="news" role="tab">NEWS</a></li>
           <li role="presentation" class="nav-item"><a href="./pages/contact-us.html" aria-controls="contact" role="tab">CONTACT US</a></li>
         </ul>
-        <button class="btn btn-book">BOOK NOW</button>
+        
+        <div class="nav-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <button class="btn btn-book .btn-lg-screen">BOOK NOW</button>
+      
       </nav>
     </section>
 
@@ -172,42 +180,46 @@
     <!-- blog posts section -->
     <section class="blog container">
       <div class="blog-container">
-       <div class="blog-container__posts">
-         <img src="assets/images/blog1.png" alt="" srcset="">
-         <div class="blog-post">
-           <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-           <div class="blog-activities">
-             <span>post by Admin</span>
-             <span><i class="fa fa-heart-o fa-lg"></i>Likes</span>
-             <span><i class="fa fa-comment-o fa-lg"></i>Likes</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.</p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac</p>
-
-              <button class="blog-post__btn btn">READ MORE</button>
-
-           </div>
-         </div>
-       </div> 
-
-       <div class="blog-container__posts">
-        <img src="assets/images/blog2.png" alt="" srcset="">
-        <div class="blog-post">
-          <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-          <div class="blog-activities">
-            <span>post by Admin</span>
-            <span><i class="fa fa-heart-o fa-lg"></i>Likes</span>
-            <span><i class="fa fa-comment-o fa-lg"></i>Likes</span>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.</p>
-
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac</p>
-
-             <button class="blog-post__btn btn">READ MORE</button>
-
+        <div class="blog-container__posts">
+          <img src="assets/images/blog1.png" alt="" srcset="">
+          <div class="blog-post">
+            <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+            <div class="blog-activities">
+              <span>post by Admin</span>
+              <span><i class="fa fa-heart-o fa-lg"></i>Likes</span>
+              <span><i class="fa fa-comment-o fa-lg"></i>Likes</span>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.</p>
+  
+               <p class="paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac</p>
+  
+               <button class="blog-post__btn btn">READ MORE</button>
+  
+            </div>
           </div>
-        </div>
+        </div> 
+
+        <div class="blog-container__posts">
+          <img src="assets/images/blog2.png" alt="" srcset="">
+          <div class="blog-post">
+            <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+            <div class="blog-activities">
+              <span>post by Admin</span>
+              <span><i class="fa fa-heart-o fa-lg"></i>Likes</span>
+              <span><i class="fa fa-comment-o fa-lg"></i>Likes</span>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.</p>
+  
+               <p class="paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac</p>
+  
+               <button class="blog-post__btn btn">READ MORE</button>
+  
+            </div>
+          </div>
+        </div> 
+       
       </div> 
-      </div>
+
+     
+     
        
     </section>
   </main>

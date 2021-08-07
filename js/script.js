@@ -1,15 +1,7 @@
-let rootElement = document.querySelector('#scroll-top');
+const navToggle = document.querySelector('.nav-links');
 
-function handleScroll() {
-  // Do something on scroll
-  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-  if ((rootElement.scrollTop / scrollTotal ) > 0.80 ) {
-    // Show button
-    scrollToTopBtn.classList.remove("showBtn")
-  } else {
-    // Hide button
-    scrollToTopBtn.classList.add("showBtn")
-  }
-};
+const hamburger = document.querySelector('.nav-toggler');
 
-document.addEventListener('scroll', handleScroll)
+hamburger.addEventListener('click', () => {
+  navToggle.classList.toggle('nav-active');
+})

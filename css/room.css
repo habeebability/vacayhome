@@ -1,9 +1,31 @@
+.container {
+  padding: 1rem;
+}
+
 .room-gallery {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 1em;
+  row-gap: 1em;
 }
 
 .services {
   background-color: rgba(0, 0, 0, 0.25);
   margin: 4em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 2rem max(3%, 10%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 2rem max(3%, 15%);
+  }
+  .room-gallery {
+    flex-wrap: nowrap;
+  }
 }
