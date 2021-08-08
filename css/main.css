@@ -80,6 +80,7 @@ a {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  /* width: 100%; */
 }
 
 .nav-toggler {
@@ -99,14 +100,16 @@ a {
 .navbar .nav-links {
   display: none;
 }
+.navbar .nav-links.nav-active li {
+  padding: 0.2em 0.4em;
+}
 
 .navbar .nav-links.nav-active {
   display: flex;
   flex-direction: column;
-  /* flex-basis: 100%; */
   position: absolute;
   top: 5rem;
-  left: 1rem;
+  left: 0rem;
   background-color: blanchedalmond;
 }
 
@@ -404,12 +407,20 @@ input[type="email"] {
   display: inline-block;
 }
 
-#scroll-top.showBtn {
+/* #scroll-top.showBtn {
   display: none;
-}
+} */
 
 #scroll-top span {
   display: block;
+}
+
+.show-scroll-top {
+  opacity: 1;
+}
+
+.hide-scroll-top {
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -428,6 +439,11 @@ input[type="email"] {
     order: 2;
   }
 
+  .nav-links.nav-active {
+    display: flex;
+    flex-direction: row;
+  }
+
   .navbar .nav-item {
     padding: 0.5em;
   }
@@ -438,6 +454,10 @@ input[type="email"] {
 
   .nav-toggler {
     display: none;
+  }
+
+  .navbar .btn {
+    position: initial;
   }
   .choose-package {
     height: 40vh;
@@ -503,6 +523,7 @@ input[type="email"] {
   }
 
   .navbar .btn-book {
+    position: initial;
     order: 2;
   }
 
